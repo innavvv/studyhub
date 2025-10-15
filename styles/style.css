@@ -1,0 +1,89 @@
+/* Скидання базових відступів */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Основні стилі */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Шапка та навігація */
+header {
+    background-color: #1E3A8A;
+    color: #fff;
+    padding: 15px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a.active {
+    text-decoration: underline;
+}
+
+/* Основне */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    background-color: #F3F4F6;
+    padding: 15px;
+    margin-top: 50px;
+}
+
+/* Форма на сторінці Контакти */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+}
+
+input, textarea, button {
+    padding: 10px;
+    font-size: 14px;
+}
+
+button {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2563EB;
+}
+
+.banner {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px; 
+    border-radius: 6px;
+}
+
+
