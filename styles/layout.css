@@ -1,0 +1,260 @@
+/* =====================================================
+                структурні блоки сайту
+   ===================================================== */
+
+
+/* Шапка */
+.header-area {
+    margin: 40px auto;
+    padding: 40px;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Стилі посилань у header */
+nav a {
+    color: #1E3A8A;
+    font-weight: 600;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+nav a.active {
+    color: #3B82F6;
+}
+
+nav a:hover {
+    color: #3B82F6;
+}
+
+
+/* MAIN */
+main {
+    background-color: #FFFFFF;
+    max-width: 1200px; 
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-top: 40px;
+    border-top: 1px solid #ddd;
+    color: #555;
+}
+
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    gap: 40px;
+}
+
+/* Текстова частина */
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h1 {
+    font-size: 36px;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Зображення */
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+
+/* GRID КАРТОК */
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.cards-grid .card {
+    background-color: #F9FAFB;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.cards-grid .card h3 {
+    color: #1E3A8A;
+    margin-bottom: 10px;
+}
+
+.cards-grid .card p {
+    color: #444;
+    margin-bottom: 12px;
+}
+
+.cards-grid .card .button {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Верхня панель */
+.header-area {
+    margin: 40px auto !important;
+    padding: 20px 40px;
+    max-width: 1200px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Контейнер логотип + меню */
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+/* Логотип */
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #3B82F6;
+    line-height: 1; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Меню */
+.nav-wrapper ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center; 
+}
+
+.nav-wrapper ul li a {
+    font-size: 18px;
+    color: #1E3A8A;
+    font-weight: 600;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.nav-wrapper ul li a.active {
+    color: #3B82F6;
+}
+
+.nav-wrapper ul li a:hover {
+    color: #3B82F6;
+}
+
+/* Контейнер сторінки Про нас */
+.about-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.about-hero {
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+}
+
+.about-hero h1 {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.about-hero p {
+    font-size: 18px;
+}
+
+.about-block {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+/* Grid зі списком пропозицій */
+.offer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.offer-item {
+    background: #F3F4F6;
+    padding: 18px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+/* Контакти - контейнер */
+.contact-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-block {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* Дві колонки */
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+/* Ліва колонка */
+.contact-form {
+    flex: 1;
+}
+
+/* Права колонка */
+.contact-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-image img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 20px;
+}

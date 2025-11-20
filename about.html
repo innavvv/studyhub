@@ -4,36 +4,82 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyHub – Про нас</title>
+
+    <!-- Іконка сайту -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Загальний стиль -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<header>
-    <nav>
-        <ul>
+<header class="header-area">
+
+    <div class="nav-wrapper">
+
+        <!-- Логотип -->
+        <div class="logo">StudyHub</div>
+
+        <!-- Головне меню -->
+        <ul class="nav-menu">
             <li><a href="index.html">Головна</a></li>
             <li><a href="about.html" class="active">Про нас</a></li>
             <li><a href="catalog.html">Репетитори</a></li>
             <li><a href="courses.html">Курси</a></li>
             <li><a href="contacts.html">Контакти</a></li>
         </ul>
-    </nav>
+
+        <!-- Кнопки Вхід / Реєстрація -->
+        <div class="nav-auth">
+            <a href="login.html" class="auth-btn login-btn">Вхід</a>
+            <a href="register.html" class="auth-btn register-btn">Реєстрація</a>
+        </div>
+
+    </div>
+
 </header>
 
-<main>
-    <h1>Про StudyHub</h1>
-    <p><strong>StudyHub</strong> — це освітня платформа, що об’єднує викладачів і студентів з усієї України.</p>
 
-    <h2>Наша місія</h2>
-    <p>Зробити якісну освіту доступною кожному, незалежно від місця проживання чи фінансових можливостей.</p>
 
-    <h3>Що ми пропонуємо</h3>
-    <ol>
-        <li>Пошук репетиторів з різних предметів</li>
-        <li>Онлайн курси від досвідчених викладачів</li>
-        <li>Простий інтерфейс та безпечні оплати</li>
-    </ol>
+<main class="about-container">
+
+    <!-- Верхній вступний блок -->
+    <section class="about-hero">
+        <h1>Освітня платформа, що надихає навчатися</h1>
+
+        <p>
+            Ми створили StudyHub, щоб студенти могли легко знаходити найкращих викладачів
+            та проходити якісні онлайн-курси, незалежно від місця проживання.
+        </p>
+    </section>
+
+    <!-- Місія -->
+    <section class="about-block">
+        <h2>Наша місія</h2>
+
+        <p>
+            Наша мета — зробити освіту доступною для кожного. Ми прагнемо поєднати студентів
+            з професійними викладачами та надати інструменти для ефективного і зручного навчання.
+        </p>
+    </section>
+
+    <!-- Що пропонуємо -->
+    <section class="about-block">
+        <h2>Що ми пропонуємо</h2>
+
+        <div class="offer-grid">
+            <div class="offer-item">Пошук репетиторів з різних предметів</div>
+            <div class="offer-item">Онлайн-курси від професійних викладачів</div>
+            <div class="offer-item">Сучасний та інтуїтивний інтерфейс</div>
+            <div class="offer-item">Безпечні та швидкі оплати</div>
+        </div>
+    </section>
+
 </main>
+
 
 
 <footer>

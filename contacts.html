@@ -4,45 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyHub – Контакти</title>
+
+    <!-- Іконка сайту -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Стилі -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<header>
-    <nav>
-        <ul>
+<header class="header-area">
+    <div class="nav-wrapper">
+
+        <!-- Логотип -->
+        <div class="logo">StudyHub</div>
+
+        <!-- Меню -->
+        <ul class="nav-menu">
             <li><a href="index.html">Головна</a></li>
             <li><a href="about.html">Про нас</a></li>
             <li><a href="catalog.html">Репетитори</a></li>
             <li><a href="courses.html">Курси</a></li>
             <li><a href="contacts.html" class="active">Контакти</a></li>
         </ul>
-    </nav>
+
+        <!-- Кнопки Вхід / Реєстрація -->
+        <div class="nav-auth">
+            <a href="login.html" class="auth-btn login-btn">Вхід</a>
+            <a href="register.html" class="auth-btn register-btn">Реєстрація</a>
+        </div>
+
+    </div>
 </header>
 
-<main>
-    <h1>Контакти</h1>
-    <p>Якщо у вас є запитання — напишіть нам через форму нижче:</p>
 
-    <form>
-        <label for="name">Ім’я:</label>
-        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+<main class="contact-container">
 
-        <label for="message">Повідомлення:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+    <section class="contact-block">
 
-        <button type="submit">Надіслати</button>
-    </form>
+        <div class="contact-content">
+
+            <!-- форма -->
+            <div class="contact-form">
+                <h1>Контакти</h1>
+                <p class="subtitle">Зв’яжіться з нами</p>
+
+                <form id="contactForm" novalidate>
+
+                    <label for="name">Ім’я:</label>
+                    <input type="text" id="name" name="name" required minlength="2">
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Повідомлення:</label>
+                    <textarea id="message" name="message" rows="4" required minlength="5"></textarea>
+
+                    <button type="submit">Надіслати</button>
+                </form>
+            </div>
+
+            <!-- картинка -->
+            <div class="contact-image">
+                <img src="images/contact.jpg" alt="Contact us">
+            </div>
+
+        </div>
+
+    </section>
+
 </main>
+
 
 
 <footer>
     <p>© 2025 StudyHub. Всі права захищено.</p>
 </footer>
 
+
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
+

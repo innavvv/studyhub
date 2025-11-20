@@ -1,0 +1,54 @@
+/* ============================================
+              БАЗОВІ СТИЛІ САЙТУ
+   ============================================ */
+
+
+/*  СКИДАННЯ БАЗОВИХ СТИЛІВ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ОСНОВНІ НАЛАШТУВАННЯ ДЛЯ BODY*/
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #E5E1F9;     
+    color: #333;                  
+    line-height: 1.6;
+}
+
+
+/* ЗАГОЛОВКИ */
+h1, h2, h3, h4 {
+    color: #1E3A8A;   
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+
+/* АБЗАЦИ */
+p {
+    margin-bottom: 15px;
+    color: #444;       
+    font-size: 16px;
+}
+
+
+/* СПИСКИ */
+ul, ol {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+
+/* ПОСИЛАННЯ */
+a {
+    color: #3B82F6;           
+    text-decoration: none;    
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -4,47 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyHub – Курси</title>
+
+    <!-- Іконка сайту -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Стиль -->
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-<header>
-    <nav>
-        <ul>
+<header class="header-area">
+    <div class="nav-wrapper">
+
+        <!-- Логотип -->
+        <div class="logo">StudyHub</div>
+
+        <!-- Меню -->
+        <ul class="nav-menu">
             <li><a href="index.html">Головна</a></li>
             <li><a href="about.html">Про нас</a></li>
             <li><a href="catalog.html">Репетитори</a></li>
             <li><a href="courses.html" class="active">Курси</a></li>
             <li><a href="contacts.html">Контакти</a></li>
         </ul>
-    </nav>
+
+        <!-- Праві кнопки -->
+        <div class="nav-auth">
+            <a href="login.html" class="auth-btn login-btn">Вхід</a>
+            <a href="register.html" class="auth-btn register-btn">Реєстрація</a>
+        </div>
+
+    </div>
 </header>
 
+
 <main>
-    <h1>Онлайн-курси</h1>
-    <p>Обирайте курси за напрямками:</p>
 
-    <ul>
-        <li><a href="#">Програмування</a></li>
-        <li><a href="#">Мови</a></li>
-        <li><a href="#">Підготовка до ЗНО</a></li>
-        <li><a href="#">Дизайн</a></li>
-    </ul>
+    <!-- Заголовок сторінки -->
+    <section class="page-header">
+        <h1>Онлайн-курси</h1>
+        <p class="subtitle">Знайдіть курс, який вам підходить</p>
 
-    <section>
-        <h2>Популярні курси</h2>
-        <article>
+        <div class="search-box">
+            <input type="text" placeholder="Пошук курсів...">
+            <button class="button">Пошук</button>
+        </div>
+    </section>
+
+    <!-- Сітка курсів -->
+    <section class="cards-grid">
+
+        <div class="card">
             <h3>Python з нуля</h3>
             <p>Інтенсивний курс для початківців.</p>
-            <a href="#">Переглянути курс</a>
-        </article>
+            <a href="#" class="button">Переглянути курс</a>
+        </div>
 
-        <article>
+        <div class="card">
             <h3>Business English</h3>
             <p>Покращіть свою англійську для роботи.</p>
-            <a href="#">Переглянути курс</a>
-        </article>
+            <a href="#" class="button">Переглянути курс</a>
+        </div>
+
+        <div class="card">
+            <h3>Основи дизайну</h3>
+            <p>Практичний курс UI/UX для новачків.</p>
+            <a href="#" class="button">Переглянути курс</a>
+        </div>
+
     </section>
+
 </main>
 
 
@@ -52,6 +84,13 @@
     <p>© 2025 StudyHub. Всі права захищено.</p>
 </footer>
 
+
 <script src="js/script.js"></script>
+
 </body>
 </html>
+
+
+
+
+
