@@ -1,12 +1,38 @@
 /* Бургер-меню */
 function toggleMenu() {
-    const menu = document.querySelector("nav ul");
-    menu.classList.toggle("active");
+    document.querySelector(".nav-menu").classList.toggle("active");
 }
 
-/* =========================
-      ВАЛІДАЦІЯ ФОРМИ
-   ========================= */
+// Перевіряє ширину шапки
+function checkHeaderFit() {
+    const wrapper = document.querySelector(".nav-wrapper");
+    const logo = document.querySelector(".logo");
+    const menu = document.querySelector(".nav-menu");
+    const auth = document.querySelector(".nav-auth");
+    const burger = document.querySelector(".burger");
+
+    menu.style.display = "flex";
+    auth.style.display = "flex";
+
+    const totalWidth = logo.offsetWidth + menu.offsetWidth + auth.offsetWidth + 40;
+
+    if (totalWidth > wrapper.offsetWidth) {
+        burger.style.display = "block";
+        menu.style.display = "none";
+        auth.style.display = "none";
+    } 
+    else {
+        burger.style.display = "none";
+        menu.style.display = "flex";
+        auth.style.display = "flex";
+        menu.classList.remove("active");
+    }
+}
+
+window.addEventListener("load", checkHeaderFit);
+window.addEventListener("resize", checkHeaderFit);
+
+/* ВАЛІДАЦІЯ ФОРМИ */
 
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contactForm");
@@ -46,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // Додаємо клас "touched" при вводі
+    // при вводі
     document.querySelectorAll("input, textarea").forEach(field => {
         field.addEventListener("input", () => {
             field.classList.add("touched");

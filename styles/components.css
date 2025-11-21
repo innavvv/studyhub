@@ -148,38 +148,29 @@ textarea.touched:valid {
 }
 
 
-/* БУРГЕР-МЕНЮ (мобільна версія) */
+/* БУРГЕР-МЕНЮ */
 .burger {
     display: none;
     font-size: 28px;
     cursor: pointer;
-    padding: 5px 15px;
+    padding: 8px 12px;
 }
 
-@media (max-width: 768px) {
-    .burger {
-        display: block;
-        color: #1E3A8A;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: #fff;
-        padding: 15px;
-        border: 1px solid #ddd;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 200px;
-        border-radius: 10px;
-        gap: 12px;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
+/* меню при відкритому бургері */
+.nav-menu.active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    z-index: 200;
 }
+
 
 /* Секція переваг */
 .advantages-section {
