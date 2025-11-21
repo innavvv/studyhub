@@ -18,6 +18,10 @@
     .cards-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .contact-content {
+        gap: 20px;
+    }
 }
 
 
@@ -78,6 +82,25 @@
     .card {
         padding: 15px;
     }
+
+    .contact-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .contact-image {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contact-image img {
+        width: 100%;
+        max-width: 500px;
+        border-radius: 16px;
+        margin-top: 20px;
+    }
 }
 
 
@@ -90,6 +113,10 @@
 
     nav ul {
         font-size: 16px;
+    }
+    
+    .contact-image img {
+        max-width: 380px;
     }
 }
 
