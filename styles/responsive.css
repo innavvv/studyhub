@@ -152,5 +152,19 @@
     }
 }
 
+.mobile-auth {
+    display: none;
+}
+
+/* Показуємо у бургер-меню */
+@media (max-width: 768px) {
+    .mobile-auth {
+        display: block;
+    }
+
+    .nav-auth {
+        display: none;
+    }
+}
 
 
