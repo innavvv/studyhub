@@ -29,7 +29,10 @@ function checkHeaderFit() {
     }
 }
 
-window.addEventListener("load", checkHeaderFit);
+window.addEventListener("load", () => {
+    setTimeout(checkHeaderFit, 50);
+});
+
 window.addEventListener("resize", checkHeaderFit);
 
 /* ВАЛІДАЦІЯ ФОРМИ */
