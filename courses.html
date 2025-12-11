@@ -30,7 +30,9 @@
             <li><a href="catalog.html">Репетитори</a></li>
             <li><a href="courses.html" class="active">Курси</a></li>
             <li><a href="contacts.html">Контакти</a></li>
-
+            
+            </li><button id="themeToggle" class="theme-toggle">🌙</button></li>
+            
             <li class="mobile-auth"><a href="login.html">Вхід</a></li>
             <li class="mobile-auth"><a href="register.html">Реєстрація</a></li>
         </ul>
@@ -61,33 +63,55 @@
     </section>
 
     <!-- Сітка курсів -->
-    <section class="cards-grid">
+<section class="cards-grid" id="coursesGrid">
 
-        <div class="card">
-            <h3>Python з нуля</h3>
-            <p>Інтенсивний курс для початківців.</p>
-            <a href="#" class="button">Переглянути курс</a>
-        </div>
+    <!-- 3 видимі картки -->
+    <div class="card">
+        <h3>Python з нуля</h3>
+        <p>Інтенсивний курс для початківців.</p>
+        <a href="#" class="button">Переглянути курс</a>
+    </div>
 
-        <div class="card">
-            <h3>Business English</h3>
-            <p>Покращіть свою англійську для роботи.</p>
-            <a href="#" class="button">Переглянути курс</a>
-        </div>
+    <div class="card">
+        <h3>Business English</h3>
+        <p>Покращіть свою англійську для роботи.</p>
+        <a href="#" class="button">Переглянути курс</a>
+    </div>
 
-        <div class="card">
-            <h3>Основи дизайну</h3>
-            <p>Практичний курс UI/UX для новачків.</p>
-            <a href="#" class="button">Переглянути курс</a>
-        </div>
+    <div class="card">
+        <h3>Основи дизайну</h3>
+        <p>Практичний курс UI/UX для новачків.</p>
+        <a href="#" class="button">Переглянути курс</a>
+    </div>
 
-    </section>
+    <!-- Сховані картки -->
+    <div class="card extra hidden">
+        <h3>JavaScript для початківців</h3>
+        <p>Вивчіть основи JS та створіть власний проєкт.</p>
+        <a href="#" class="button">Переглянути курс</a>
+    </div>
+
+    <div class="card extra hidden">
+        <h3>Photoshop</h3>
+        <p>Професійна обробка фото з нуля.</p>
+        <a href="#" class="button">Переглянути курс</a>
+    </div>
+
+    <div class="card extra hidden">
+        <h3>Маркетинг</h3>
+        <p>Основи маркетингу та просування брендів.</p>
+        <a href="#" class="button">Переглянути курс</a>
+    </div>
+
+</section>
+
+    <button id="showMoreBtn" class="button show-more-btn">Показати більше</button>
 
 </main>
 
 
 <footer>
-    <p>© 2025 StudyHub. Всі права захищено.</p>
+    <p>© <span id="year"></span> StudyHub. Всі права захищено.</p>
 </footer>
 
 

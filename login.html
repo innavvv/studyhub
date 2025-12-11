@@ -24,7 +24,9 @@
             <li><a href="catalog.html">Репетитори</a></li>
             <li><a href="courses.html">Курси</a></li>
             <li><a href="contacts.html">Контакти</a></li>
-
+            
+            </li><button id="themeToggle" class="theme-toggle">🌙</button></li>
+            
             <li class="mobile-auth"><a href="login.html" class="active">Вхід</a></li>
             <li class="mobile-auth"><a href="register.html">Реєстрація</a></li>
         </ul>
@@ -51,7 +53,7 @@
 
     <!-- Форма авторизації -->
     <section>
-        <form class="auth-form">
+        <form class="auth-form login" novalidate>
 
             <label>Email:</label>
             <input type="email" placeholder="example@gmail.com" required>
@@ -60,6 +62,7 @@
             <input type="password" placeholder="Введіть пароль" required>
 
             <button type="submit" class="button">Увійти</button>
+
 
             <p class="center-text">
                 Немає акаунта? <a href="register.html">Створити</a>
@@ -72,7 +75,7 @@
 
 
 <footer>
-    <p>© 2025 StudyHub. Всі права захищено.</p>
+    <p>© <span id="year"></span> StudyHub. Всі права захищено.</p>
 </footer>
 
 <script src="js/script.js"></script>

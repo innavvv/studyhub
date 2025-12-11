@@ -55,6 +55,13 @@ button:hover,
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+.card p {
+    flex-grow: 1; /* тягне текст, щоб кнопка була знизу */
 }
 
 .card h3 {
@@ -71,7 +78,10 @@ button:hover,
     background-color: #3B82F6;
     color: #fff;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: auto;
+    width: fit-content;
+    align-self: flex-start;
+    display: inline-block;
 }
 
 /* ЗОБРАЖЕННЯ З ЗАОКРУГЛЕННЯМИ */
@@ -321,3 +331,152 @@ nav {
 .register-btn:hover {
     background: #2563EB;
 }
+
+/* Сховані картки */
+
+.hidden {
+    display: none !important;
+}
+
+.show-more-btn {
+    margin: 20px auto;
+    display: block;
+}
+
+/*  DARK THEME  */
+
+/* Кнопка перемикання теми */
+.theme-toggle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background: #ffffffaa;
+    backdrop-filter: blur(5px);
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+    margin-left: 15px;
+}
+
+/* Ефект наведення */
+.theme-toggle:hover {
+    background: #ffffffdd;
+    transform: scale(1.1);
+}
+
+/* Темний режим змін кольори кнопки */
+.dark-theme .theme-toggle {
+    background: #333333aa;
+    color: #fff;
+}
+
+/* ЗМІНА ТЕМИ */
+.dark-theme {
+    background-color: #1f1f26 !important;
+    color: #e5e7eb !important;
+}
+
+/* Контейнер та блоки */
+.dark-theme main,
+.dark-theme section,
+.dark-theme .hero,
+.dark-theme .advantages-section,
+.dark-theme .contact-block,
+.dark-theme footer {
+    background-color: #292932 !important;
+    color: #e5e7eb !important;
+}
+
+/* Текст */
+.dark-theme h1,
+.dark-theme h2,
+.dark-theme h3,
+.dark-theme p,
+.dark-theme label {
+    color: #eeeef2 !important;
+}
+
+/* Картки */
+.dark-theme .card,
+.dark-theme .adv-card,
+.dark-theme .offer-item{
+    background: #2f2f38 !important;
+    color: #e5e7eb !important;
+    border-color: #3b3b46 !important;
+}
+
+/* Кнопки */
+.dark-theme .button,
+.dark-theme button {
+    background-color: #446dff !important;
+    color: white !important;
+}
+
+.dark-theme .button:hover,
+.dark-theme button:hover {
+    background-color: #3657cc !important;
+}
+
+/* Поля форми */
+.dark-theme input,
+.dark-theme textarea {
+    background: #3a3a45 !important;
+    border-color: #555 !important;
+    color: #e5e7eb !important;
+}
+
+.dark-theme input::placeholder,
+.dark-theme textarea::placeholder {
+    color: #b4b4c5 !important;
+}
+
+/* Меню */
+.dark-theme .nav-menu {
+    background: #2b2b34 !important;
+}
+
+/* Шапка */
+.dark-theme header {
+    background: #2b2b34 !important;
+    box-shadow: none !important;
+}
+
+/* Лого */
+.dark-theme .logo {
+    color: #7ea9ff !important;
+}
+
+/* Кнопка перемикання теми */
+.dark-theme .theme-toggle {
+    background: #3b3b45aa !important;
+    color: #fff !important;
+}
+
+
+/* Ефект збільшення елементів меню */
+.nav-menu a {
+    transition: transform 0.2s ease, color 0.2s ease;
+    display: inline-block;
+}
+
+.nav-hover-scale {
+    transform: scale(1.1);
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+
+

@@ -3,7 +3,117 @@
    ============================================================ */
 
 
-/* до 992px */
+/* Десктоп */
+@media (min-width: 1100px) {
+
+    .burger {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 32px !important;              
+        align-items: center !important;  
+        position: static !important;
+        background: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;         
+        margin-left: 40px
+    }
+
+    .nav-menu li a {
+        font-size: 18px;                    
+        font-weight: 500;
+    }
+
+    .nav-menu.active {
+        display: flex !important;
+    }
+
+    .mobile-auth {
+        display: none;
+    }
+
+    .nav-auth {
+        display: flex;
+        gap: 16px;
+    }
+}
+
+/* Телефон */
+@media (max-width: 768px) {
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-auth {
+        display: none;
+    }
+
+    .mobile-auth {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #fff;
+        width: 220px;
+        padding: 16px;
+        border-radius: 12px;
+        gap: 14px;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
+/* Планшет */
+@media (min-width: 768px) and (max-width: 1100px) {
+
+    .burger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-auth {
+        display: flex;
+    }
+
+    .mobile-auth {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none !important;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #fff;
+        width: 220px;
+        padding: 16px;
+        border-radius: 12px;
+        gap: 14px;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+}
+
+/* дві колонки карток */
 @media (max-width: 992px) {
 
     main {
@@ -24,32 +134,15 @@
     }
 }
 
+/* блоки переваг по 2 в ряд */
+@media (max-width: 900px) {
+    .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
-/* до 768px */
+/* hero стає вертикальним, картинки зменшуються*/
 @media (max-width: 768px) {
-
-    .burger {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        background: #fff;
-        padding: 15px;
-        border: 1px solid #ddd;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        width: 200px;
-        border-radius: 10px;
-        gap: 12px;
-        z-index: 100;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
 
     header {
         padding: 15px 0;
@@ -60,23 +153,23 @@
         padding: 20px;
     }
 
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .hero-image img {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
     .search-box {
         flex-direction: column;
     }
 
     .search-box button {
         width: 100%;
-    }
-
-    .hero {
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-    }
-
-    .hero-image img {
-        max-width: 300px;
-        margin: 0 auto;
     }
 
     .card {
@@ -103,8 +196,21 @@
     }
 }
 
+/* одна колонка карток */
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
-/* до 480px */
+/* переваги 1 в ряд */
+@media (max-width: 600px) {
+    .advantages-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* зменшення шрифтів */
 @media (max-width: 480px) {
 
     h1 { font-size: 22px; }
@@ -114,67 +220,10 @@
     nav ul {
         font-size: 16px;
     }
-    
+
     .contact-image img {
         max-width: 380px;
     }
 }
 
-
-/* HERO СЕКЦІЇ */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-}
-
-
-/* GRID карток (телефони) */
-@media (max-width: 600px) {
-    .cards-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-
-/* БЛОК ПЕРЕВАГ */
-@media (max-width: 900px) {
-    .advantages-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 600px) {
-    .advantages-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-.mobile-auth {
-    display: none;
-}
-
-/* Показуємо у бургер-меню */
-@media (max-width: 768px) {
-    .mobile-auth {
-        display: block;
-    }
-
-    .nav-auth {
-        display: none;
-    }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-    .mobile-auth {
-        display: none !important;
-    }
-
-    .nav-auth {
-        display: flex !important;
-    }
-}
 

@@ -30,7 +30,9 @@
             <li><a href="catalog.html">Репетитори</a></li>
             <li><a href="courses.html">Курси</a></li>
             <li><a href="contacts.html" class="active">Контакти</a></li>
-
+            
+            </li><button id="themeToggle" class="theme-toggle">🌙</button></li>
+            
             <li class="mobile-auth"><a href="login.html">Вхід</a></li>
             <li class="mobile-auth"><a href="register.html">Реєстрація</a></li>
         </ul>
@@ -62,13 +64,22 @@
                 <form id="contactForm" novalidate>
 
                     <label for="name">Ім’я:</label>
-                    <input type="text" id="name" name="name" required minlength="2">
+                    <input type="text" id="name" name="name">
+                    <p id="nameError" class="error-message" style="display:none; color:red;">
+                    Ім’я має бути не коротше 2 символів
+                    </p>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email">
+                    <p id="emailError" class="error-message" style="display:none; color:red;">
+                    Введіть коректний email
+                    </p>
 
                     <label for="message">Повідомлення:</label>
-                    <textarea id="message" name="message" rows="4" required minlength="5"></textarea>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                    <p id="messageError" class="error-message" style="display:none; color:red;">
+                    Повідомлення має містити мінімум 5 символів
+                    </p>
 
                     <button type="submit">Надіслати</button>
                 </form>
@@ -88,7 +99,7 @@
 
 
 <footer>
-    <p>© 2025 StudyHub. Всі права захищено.</p>
+    <p>© <span id="year"></span> StudyHub. Всі права захищено.</p>
 </footer>
 
 
